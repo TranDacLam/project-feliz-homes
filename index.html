@@ -6,8 +6,9 @@
 	 <!-- add bootstrap css file -->
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
 <body>
@@ -20,26 +21,28 @@
 				</a>
 
 				<div class="navbar__content">
-					<ul class="navbar__contact align-self-end d-flex">
-						<li>
-							<a class="" href="$" target="_blank">
-								<img src="images/icon-fb.png" alt="Facebook" />
-							</a>
-						</li>
-						<li>
-							<a class="" href="$" target="_blank">
-								<img src="images/icon-youtube.png" alt="Youtube" />
-							</a>
-						</li>
-						<li>
-							<a class="" href="$" target="_blank">
-								<img src="images/icon-hotline.png" alt="Hotline" />
-							</a>
-						</li>
-						<li class="navbar__contact-hotline">
-							<a href="tel:123-456-7890">0123456789</a>
-						</li>
-					</ul>
+					<div class="navbar__contact">
+						<ul class="align-self-end d-flex">
+							<li>
+								<a class="" href="$" target="_blank">
+									<img src="images/icon-fb.png" alt="Facebook" />
+								</a>
+							</li>
+							<li>
+								<a class="" href="$" target="_blank">
+									<img src="images/icon-youtube.png" alt="Youtube" />
+								</a>
+							</li>
+							<li>
+								<a class="" href="$" target="_blank">
+									<img src="images/icon-hotline.png" alt="Hotline" />
+								</a>
+							</li>
+							<li class="navbar__contact-hotline">
+								<a href="tel:123-456-7890">0123456789</a>
+							</li>
+						</ul>
+					</div>
 
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -84,14 +87,14 @@
 
 		<!-- header -->
 		<header class="header" id="home">
-			<div class="header__bg"></div>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-5">
 						<h4>
 							Tropical Resort</br>
 							Tận hưởng 365 ngày nghỉ dưỡng
 						</h4>
+						<img src="images/title-header.png" />
 					</div>
 				</div>
 			</div>
@@ -101,188 +104,214 @@
 		<div class="about" id="about">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
-						<img src="images/portfolio/port8.png" />
+					<div class="col-md-6 wow slideInLeft d-flex flex-column justify-content-center align-items-center">
+						<img src="images/about.svg" />
 					</div>
-					<div class="col-md-6">
-						<h1 class="text-center">About Me</h1>
-						<h3>D.John</h3>
+					<div class="about__content col-md-6">
+						<div class="about__content-title">
+							<h4 class="">GIỚI THIỆU</h4>
+							<p>
+								Tọa lạc ngay trung tâm quận Hoàng Mai, Feliz Homes được thiết kế "may đo" dành riêng cho mỗi cư dân của mình. 
+								Bước vào Feliz Homes sẽ là không gian tươi mát, trong lành, tận hưởng 365 ngày sống xanh giữa lòng Hà Nội
+							</p>
+						</div>
+						<ul class="about__content-body">
+							<li>
+								<img src="images/about-1.svg" />
+								<div>
+									<p>Tên dự án:</p>
+									<strong>Feliz homes</strong>
+								</div>
+							</li>
+							<li>
+								<img src="images/about-2.svg" />
+								<div>
+									<p>Vị trí:</p>
+									<strong>P. Hoàng Văn Thụ, Q. Hoàng Mai, Hà Nội</strong>
+								</div>
+							</li>
+							<li>
+								<img src="images/about-3.svg" />
+								<div>
+									<p>Diện tích:</p>
+									<strong>21.023m2 (2ha)</strong>
+								</div>
+							</li>
+							<li>
+								<img src="images/about-4.svg" />
+								<div>
+									<p>Dòng sản phẩm::</p>
+									<strong>Căn hộ chung cư cao cấp</strong>
+								</div>
+							</li>
+							<li>
+								<img src="images/about-5.svg" />
+								<div>
+									<p>Chủ đầu tư:</p>
+									<strong>Công ty Cổ Phần Vintep</strong>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- location-other section -->
+		<div class="location-other" id="location-other">
+			<div class="container">
+				<div class="location-other__header">
+					<h4 class="text-center">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit</h4>
+				</div>
+				<div class="location-other__content">
+					<div class="row location-other__content-one mb-4">
+						<div>
+							<img src="images/util-1.png" />
+							<p class="text-center mt-2">Thuận tiện di chuyển đến <br> các tuyến bệnh viện</p>
+						</div>
+						<div>
+							<img src="images/util-2.png" />
+							<p class="text-center mt-2">Thuận tiện di chuyển đến các trục đường lớn</p>
+						</div>
+						<div>
+							<img src="images/util-3.png" />
+							<p class="text-center mt-2">Thuận tiện di chuyển đến <br> các tuyến trường học</p>
+						</div>
+					</div>
+					<div class="row location-other__content-two">
+						<div>
+							<img src="images/util-4.png" />
+						</div>
+						<div >
+							<img src="images/util-5.png" />
+						</div>
+						<div >
+							<img src="images/util-6.png" />
+						</div>
+						<div >
+							<img src="images/util-7.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- location section -->
+		<div class="location" id="location">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 wow slideInLeft text-center">
+						<img class="mb-4" src="images/icon-location.svg" />
+						<h4 class="">Trung tâm <br> quận Hoàng Mai</h4>
 						<p>
-						ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Feliz Homes tọa lạc giữa trung tâm quận Hoàng Mai, 
+							thuận tiện cho việc lưu thông vào trung tâm thủ đô Hà Nội, 
+							cũng như các bệnh viện tuyến đầu, các trường đại học lớn và hàng loạt tiện ích cho dân cư.
+						</p>
+						
+					</div>
+					<div class="location__content col-md-7">
+						<img src="images/map.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- utilities section -->
+		<div class="utilities" id="utilities">
+			<div class="container">
+				<div class="row flex-row-reverse">
+					<div class="utilities__slides col-md-7">
+						<img src="images/util.svg" />
+					</div>
+					<div class="col-md-4 wow slideInRight utilities__content">
+						<h4 class="text-center">KHÔNG GIAN SỐNG XANH NHƯ RESORT GIỮA LÒNG THỦ ĐÔ HÀ NỘI </h4>
+						<p>
+							Một dự án hiếm hoi giữa lòng thủ đô Hà Nội mang không gian xanh của rừng nhiệt đới 
+							cùng các tiện ích chăm sóc sức khỏe đến các tiện ích vui chơi cho trẻ nhỏ phát triển, 
+							với mỗi khách hàng và cư dân ở đây 365 ngày đều là ngày nghỉ dưỡng.
+						</p>
+						<p>
+							Sở hữu chuỗi tiện ích nghỉ dưỡng wellness, giờ đây 365 ngày đều là ngày nghỉ dưỡng cùng hàng loạt các tiện ích.
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- portfolio -->
-		<div class="portfolio" id="portfolio">
-			<h1 class="text-center">Portfolio</h1>
+		<!-- ground section -->
+		<div class="ground" id="ground">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<img src="images/portfolio/port13.png" class="img-fluid">
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<img src="images/portfolio/port1.png" class="img-fluid">
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<img src="images/portfolio/port6.png" class="img-fluid">
-					</div>
-
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<img src="images/portfolio/port3.png" class="img-fluid">
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<img src="images/portfolio/port11.png" class="img-fluid">
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<img src="images/portfolio/electric.png" class="img-fluid">
-					</div>
-
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<img src="images/portfolio/Classic.jpg" class="img-fluid">
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<img src="images/portfolio/port1.png" class="img-fluid">
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<img src="images/portfolio/port8.png" class="img-fluid">
-					</div>
+				<h4 class="text-center mb-3">MẶT BẰNG TẦNG ĐIỂN HÌNH</h4>
+				<div class="ground__slides ">
+					<img src="images/around-1.svg" />
 				</div>
 			</div>
 		</div>
 
-
-		<!-- Posts section -->
-		<div class="blog" id="blog">
+		<!-- apartment section -->
+		<div class="apartment" id="apartment">
 			<div class="container">
-				<h1 class="text-center">Blog</h1>
-				<div class="row">
-					<div class="col-md-4 col-lg-4 col-sm-12">
-						<div class="card">
-							<div class="card-img">
-								<img src="images/posts/polit.jpg" class="img-fluid">
-							</div>
-							
-							<div class="card-body">
-							<h4 class="card-title">Post Title</h4>
-								<p class="card-text">
-									
-									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</p>
-							</div>
-							<div class="card-footer">
-								<a href="" class="card-link">Read more</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-lg-4 col-sm-12">
-						<div class="card">
-							<div class="card-img">
-								<img src="images/posts/images.jpg" class="img-fluid">
-							</div>
-							
-							<div class="card-body">
-							<h4 class="card-title">Post Title</h4>
-								<p class="card-text">
-									
-									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</p>
-							</div>
-							<div class="card-footer">
-								<a href="" class="card-link">Read more</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-lg-4 col-sm-12">
-						<div class="card">
-							<div class="card-img">
-								<img src="images/posts/imag2.jpg" class="img-fluid">
-							</div>
-							
-							<div class="card-body">
-							<h4 class="card-title">Post Title</h4>
-								<p class="card-text">
-									
-									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</p>
-							</div>
-							<div class="card-footer">
-								<a href="" class="card-link">Read more</a>
-							</div>
-						</div>
-					</div>
+				<h4 class="text-center mb-3">MẶT BẰNG TẦNG ĐIỂN HÌNH</h4>
+				<div class="apartment__slides ">
+					<img src="images/apartment-1.svg" />
 				</div>
 			</div>
 		</div>
 
-		<!-- Team section -->
-		<div class="team" id="team">
+		<!-- furniture section -->
+		<div class="furniture" id="furniture">
 			<div class="container">
-				<h1 class="text-center">Our Team</h1>
-				<div class="row">
-					<div class="col-lg-3 col-md-3 col-sm-12 item">
-						<img src="images/team-2.jpg" class="img-fluid" alt="team">
-						<div class="des">
-							Sara
-						</div>
-						<span class="text-muted">Manager</span>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-12 item">
-						<img src="images/team-3.jpg" class="img-fluid" alt="team">
-						<div class="des">
-							Chris
-						</div>
-						<span class="text-muted">S.enginner</span>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-12 item">
-						<img src="images/team-2.jpg" class="img-fluid" alt="team">
-						<div class="des">
-							Layla 
-						</div>
-						<span class="text-muted">Front End Developer</span>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-12 item">
-						<img src="images/team-3.jpg" class="img-fluid" alt="team">
-						<div class="des">
-							J.Jirard
-						</div>
-						<span class="text-muted">Team Manger</span>
-					</div>
+				<h4 class="text-center mb-3">MẶT BẰNG TẦNG ĐIỂN HÌNH</h4>
+				<div class="furniture__slides ">
+					<img src="images/apartment-1.svg" />
 				</div>
 			</div>
 		</div>
 
-		<!-- Contact form -->
-		<div class="contact-form" id="contact">
+		<!-- news section -->
+		<div class="news" id="news">
 			<div class="container">
-				<form>
-					<div class="row">
-						<div class="col-lg-4 col-md-4 col-sm-12">
-						<h1>Get in Touch</h1>	
-						</div>
-						<div class="col-lg-8 col-md-8 col-sm-12 right">
-						<div class="form-group">
-							<input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
-						</div>
-						<div class="form-group">
-							<input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
-						</div>
-						<div class="form-group">
-							<textarea class="form-control form-control-lg">
-								
-							</textarea>
-						</div>
-						<input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+				<h4 class="text-center mb-3">MẶT BẰNG TẦNG ĐIỂN HÌNH</h4>
+				<div class="news__slides ">
+					<img src="images/apartment-1.svg" />
+				</div>
+			</div>
+		</div>
+
+		<!-- contact section -->
+		<div class="contact" id="news">
+			<div class="container">
+				<div class="contact__content">
+					<div class="contact__info">
+						<div>
+							
 						</div>
 					</div>
-				</form>
+					<div class="contact__form">
+						<div>
+							<div class="row">
+								<div class="col">
+								  <input type="text" class="form-control" placeholder="First name">
+								</div>
+								<div class="col">
+								  <input type="text" class="form-control" placeholder="Last name">
+								</div>
+							  </div>
+							  <div class="row">
+								<div class="col">
+								  <input type="text" class="form-control" placeholder="First name">
+								</div>
+								<div class="col">
+								  <input type="text" class="form-control" placeholder="Last name">
+								</div>
+							  </div>
+						</div>
+						<div>
+							<button type="button" class="btn btn-light">Gửi Liên Hệ</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -291,6 +320,7 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src='js/wow.min.js'></script>
 	<script type="text/javascript" src='js/main.js'></script>
 
 </body>
