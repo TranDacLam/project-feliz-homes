@@ -6,8 +6,8 @@
 	 <!-- add bootstrap css file -->
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/slick.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
@@ -104,10 +104,10 @@
 		<div class="about" id="about">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 wow slideInLeft d-flex flex-column justify-content-center align-items-center">
+					<div class="col-md-6 wow fadeInLeftBig d-flex flex-column justify-content-center align-items-center">
 						<img src="images/about.svg" />
 					</div>
-					<div class="about__content col-md-6">
+					<div class="about__content col-md-6 wow fadeInRightBig">
 						<div class="about__content-title">
 							<h4 class="">GIỚI THIỆU</h4>
 							<p>
@@ -116,35 +116,35 @@
 							</p>
 						</div>
 						<ul class="about__content-body">
-							<li>
+							<li class="wow fadeInRightBig" data-wow-delay="0.2s">
 								<img src="images/about-1.svg" />
 								<div>
 									<p>Tên dự án:</p>
 									<strong>Feliz homes</strong>
 								</div>
 							</li>
-							<li>
+							<li class="wow fadeInRightBig" data-wow-delay="0.6s">
 								<img src="images/about-2.svg" />
 								<div>
 									<p>Vị trí:</p>
 									<strong>P. Hoàng Văn Thụ, Q. Hoàng Mai, Hà Nội</strong>
 								</div>
 							</li>
-							<li>
+							<li class="wow fadeInRightBig" data-wow-delay="1s">
 								<img src="images/about-3.svg" />
 								<div>
 									<p>Diện tích:</p>
 									<strong>21.023m2 (2ha)</strong>
 								</div>
 							</li>
-							<li>
+							<li class="wow fadeInRightBig" data-wow-delay="1.4s">
 								<img src="images/about-4.svg" />
 								<div>
 									<p>Dòng sản phẩm::</p>
 									<strong>Căn hộ chung cư cao cấp</strong>
 								</div>
 							</li>
-							<li>
+							<li class="wow fadeInRightBig" data-wow-delay="1.8s">
 								<img src="images/about-5.svg" />
 								<div>
 									<p>Chủ đầu tư:</p>
@@ -161,35 +161,39 @@
 		<div class="location-other" id="location-other">
 			<div class="container">
 				<div class="location-other__header">
-					<h4 class="text-center">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit</h4>
+					<h4 class="text-center wow bounceIn">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit</h4>
 				</div>
 				<div class="location-other__content">
 					<div class="row location-other__content-one mb-4">
-						<div>
+						<div class="wow fadeInLeftBig">
 							<img src="images/util-1.png" />
 							<p class="text-center mt-2">Thuận tiện di chuyển đến <br> các tuyến bệnh viện</p>
 						</div>
-						<div>
+						<div class="wow fadeInUpBig" data-wow-delay="0.5s">
 							<img src="images/util-2.png" />
 							<p class="text-center mt-2">Thuận tiện di chuyển đến các trục đường lớn</p>
 						</div>
-						<div>
+						<div class="wow fadeInRightBig">
 							<img src="images/util-3.png" />
 							<p class="text-center mt-2">Thuận tiện di chuyển đến <br> các tuyến trường học</p>
 						</div>
 					</div>
 					<div class="row location-other__content-two">
-						<div>
+						<div class="d-flex align-items-center flex-column wow fadeInUpBig" data-wow-delay="1s">
 							<img src="images/util-4.png" />
+							<strong>Sân Bay Nội Bài</strong>
 						</div>
-						<div >
+						<div class="d-flex align-items-center flex-column wow fadeInUpBig" data-wow-delay="1.4s">
 							<img src="images/util-5.png" />
+							<strong>Ga Hà Nội</strong>
 						</div>
-						<div >
+						<div class="d-flex align-items-center flex-column wow fadeInUpBig" data-wow-delay="1.8s">
 							<img src="images/util-6.png" />
+							<strong>Hồ Hoàn Kiếm</strong>
 						</div>
-						<div >
+						<div class="d-flex align-items-center flex-column wow fadeInUpBig" data-wow-delay="2.2s">
 							<img src="images/util-7.png" />
+							<strong>Nhà Hát Lớn Hà Nội</strong>
 						</div>
 					</div>
 				</div>
@@ -210,7 +214,7 @@
 						</p>
 						
 					</div>
-					<div class="location__content col-md-7">
+					<div class="location__content col-md-7 wow zoomInDown" data-wow-delay="0.5s">
 						<img src="images/map.png" />
 					</div>
 				</div>
@@ -221,8 +225,24 @@
 		<div class="utilities" id="utilities">
 			<div class="container">
 				<div class="row flex-row-reverse">
-					<div class="utilities__slides col-md-7">
-						<img src="images/util.svg" />
+					<div class="utilities__slides col-md-7 wow bounceInLeft" data-wow-delay="0.5s">
+						<div class="utilities__list owl-carousel">
+							<div class="utilities__item">
+								<img src="images/util.svg" />
+								<div class="utilities__item-title">
+									Công viên tổ hợp tiện ích 4000m2
+								</div>
+							</div>
+							<div class="utilities__item">
+								<img src="images/util.svg" />
+								<div class="utilities__item-title">
+									Công viên tổ hợp tiện ích 5000m2
+								</div>
+							</div>
+						</div>
+						<div class="utilities__arrow">
+							
+						</div>
 					</div>
 					<div class="col-md-4 wow slideInRight utilities__content">
 						<h4 class="text-center">KHÔNG GIAN SỐNG XANH NHƯ RESORT GIỮA LÒNG THỦ ĐÔ HÀ NỘI </h4>
@@ -243,8 +263,101 @@
 		<div class="ground" id="ground">
 			<div class="container">
 				<h4 class="text-center mb-3">MẶT BẰNG TẦNG ĐIỂN HÌNH</h4>
-				<div class="ground__slides ">
-					<img src="images/around-1.svg" />
+				<div class="ground__slides">
+					<div class="ground__list owl-carousel">
+						<div class="ground__item">
+							<img src="images/around-1.svg" />
+							<div class="ground__item-title row">
+								<div class="col-md-4 ground__item-color">
+									<span class="color-a1"></span>CĂN HỘ LOẠI A1-119.16M2
+								</div>
+								<div class="col-md-4 ground__item-color">
+									<span class="color-a2"></span>CĂN HỘ LOẠI A2-113.17M2
+								</div>
+								<div class="col-md-4 ground__item-color">
+									<span class="color-a3"></span>CĂN HỘ LOẠI A3-109.0M2
+								</div>
+								<div class="col-md-4 ground__item-color">
+									<span class="color-b1"></span>CĂN HỘ LOẠI B1-76.32M2
+								</div>
+								<div class="col-md-4 ground__item-color">
+									<span class="color-b2"></span>CĂN HỘ LOẠI B2-65.84M2
+								</div>
+								<div class="col-md-4 ground__item-color">
+									<span class="color-b3"></span>CĂN HỘ LOẠI B3-66.27M2
+								</div>
+							</div>
+						</div>
+						<div class="ground__item">
+							<img src="images/around-1.svg" />
+							<div class="ground__item-title row">
+								<div class="col-md-4 ground__item-color">
+									<span class="color-a1"></span>CĂN HỘ LOẠI A1-119.16M2
+								</div>
+								<div class="col-md-4 ground__item-color">
+									<span class="color-a2"></span>CĂN HỘ LOẠI A2-113.17M2
+								</div>
+								<div class="col-md-4 ground__item-color">
+									<span class="color-a3"></span>CĂN HỘ LOẠI A3-109.0M2
+								</div>
+								<div class="col-md-4 ground__item-color">
+									<span class="color-b1"></span>CĂN HỘ LOẠI B1-76.32M2
+								</div>
+								<div class="col-md-4 ground__item-color">
+									<span class="color-b2"></span>CĂN HỘ LOẠI B2-65.84M2
+								</div>
+								<div class="col-md-4 ground__item-color">
+									<span class="color-b3"></span>CĂN HỘ LOẠI B3-66.27M2
+								</div>
+							</div>
+						</div>
+						<div class="ground__item">
+							<img src="images/around-1.svg" />
+							<div class="ground__item-title row">
+								<div class="col-md-4 ground__item-color">
+									<span class="color-a1"></span>CĂN HỘ LOẠI A1-119.16M2
+								</div>
+								<div class="col-md-4 ground__item-color">
+									<span class="color-a2"></span>CĂN HỘ LOẠI A2-113.17M2
+								</div>
+								<div class="col-md-4 ground__item-color">
+									<span class="color-a3"></span>CĂN HỘ LOẠI A3-109.0M2
+								</div>
+								<div class="col-md-4 ground__item-color">
+									<span class="color-b1"></span>CĂN HỘ LOẠI B1-76.32M2
+								</div>
+								<div class="col-md-4 ground__item-color">
+									<span class="color-b2"></span>CĂN HỘ LOẠI B2-65.84M2
+								</div>
+								<div class="col-md-4 ground__item-color">
+									<span class="color-b3"></span>CĂN HỘ LOẠI B3-66.27M2
+								</div>
+							</div>
+						</div>
+						<div class="ground__item">
+							<img src="images/around-1.svg" />
+							<div class="ground__item-title row">
+								<div class="col-md-4 ground__item-color">
+									<span class="color-a1"></span>CĂN HỘ LOẠI A1-119.16M2
+								</div>
+								<div class="col-md-4 ground__item-color">
+									<span class="color-a2"></span>CĂN HỘ LOẠI A2-113.17M2
+								</div>
+								<div class="col-md-4 ground__item-color">
+									<span class="color-a3"></span>CĂN HỘ LOẠI A3-109.0M2
+								</div>
+								<div class="col-md-4 ground__item-color">
+									<span class="color-b1"></span>CĂN HỘ LOẠI B1-76.32M2
+								</div>
+								<div class="col-md-4 ground__item-color">
+									<span class="color-b2"></span>CĂN HỘ LOẠI B2-65.84M2
+								</div>
+								<div class="col-md-4 ground__item-color">
+									<span class="color-b3"></span>CĂN HỘ LOẠI B3-66.27M2
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -252,19 +365,76 @@
 		<!-- apartment section -->
 		<div class="apartment" id="apartment">
 			<div class="container">
-				<h4 class="text-center mb-3">MẶT BẰNG TẦNG ĐIỂN HÌNH</h4>
-				<div class="apartment__slides ">
-					<img src="images/apartment-1.svg" />
+				<ul class="apartment__nav">
+					<li>
+						1 phòng ngủ
+					</li>
+					<li>
+						2 phòng ngủ
+					</li>
+					<li>
+						3 phòng ngủ
+					</li>
+					<li>
+						Căn DUAL KEY
+					</li>
+				</ul>
+				<div class="apartment__slides wow zoomIn">
+					<div class="apartment__list owl-carousel">
+						<div class="apartment__item">
+							<img src="images/apartment-1.svg" />
+							<div class="apartment__item-title">
+								Công viên tổ hợp tiện ích 1000m2
+							</div>
+						</div>
+						<div class="apartment__item">
+							<img src="images/apartment-1.svg" />
+							<div class="apartment__item-title">
+								Công viên tổ hợp tiện ích 1000m2
+							</div>
+						</div>
+						<div class="apartment__item">
+							<img src="images/apartment-1.svg" />
+							<div class="apartment__item-title">
+								Công viên tổ hợp tiện ích 1000m2
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 
 		<!-- furniture section -->
 		<div class="furniture" id="furniture">
-			<div class="container">
-				<h4 class="text-center mb-3">MẶT BẰNG TẦNG ĐIỂN HÌNH</h4>
-				<div class="furniture__slides ">
-					<img src="images/apartment-1.svg" />
+			<div class="container-fluid">
+				<div class="container">
+					<ul class="apartment__nav">
+						<li>
+							1 phòng ngủ
+						</li>
+						<li>
+							2 phòng ngủ
+						</li>
+						<li>
+							3 phòng ngủ
+						</li>
+						<li>
+							Căn DUAL KEY
+						</li>
+					</ul>
+				</div>
+				<div class="furniture__slides wow zoomIn">
+					<div class="furniture__list owl-carousel">
+						<div class="furniture__item">
+							<img src="images/furniture-1.png" />
+						</div>
+						<div class="furniture__item">
+							<img src="images/furniture-1.png" />
+						</div>
+						<div class="furniture__item">
+							<img src="images/furniture-1.png" />
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -272,42 +442,100 @@
 		<!-- news section -->
 		<div class="news" id="news">
 			<div class="container">
-				<h4 class="text-center mb-3">MẶT BẰNG TẦNG ĐIỂN HÌNH</h4>
-				<div class="news__slides ">
-					<img src="images/apartment-1.svg" />
+				<div class="news__list owl-carousel">
+					<div class="news__item">
+						<img src="images/new-1.svg" />
+						<h6>Dự án Concordia International School đạt Chứng nhận LOTUS</h6>
+						<p>
+							Nằm trên phường Hoàng Văn Thụ, Hoàng Mai, Hà Nội. Nằm trên mặt đường quy hoạch rộng 30m nối thẳng
+						</p>
+					</div>
+					<div class="news__item">
+						<img src="images/new-2.svg" />
+						<h6>Dự án Concordia International School đạt Chứng nhận LOTUS</h6>
+						<p>
+							Nằm trên phường Hoàng Văn Thụ, Hoàng Mai, Hà Nội. Nằm trên mặt đường quy hoạch rộng 30m nối thẳng
+						</p>
+					</div>
+					<div class="news__item">
+						<img src="images/new-3.png" />
+						<h6>Dự án Concordia International School đạt Chứng nhận LOTUS</h6>
+						<p>
+							Nằm trên phường Hoàng Văn Thụ, Hoàng Mai, Hà Nội. Nằm trên mặt đường quy hoạch rộng 30m nối thẳng
+						</p>
+					</div>
+					<div class="news__item">
+						<img src="images/new-1.svg" />
+						<h6>Dự án Concordia International School đạt Chứng nhận LOTUS</h6>
+						<p>
+							Nằm trên phường Hoàng Văn Thụ, Hoàng Mai, Hà Nội. Nằm trên mặt đường quy hoạch rộng 30m nối thẳng
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
 
 		<!-- contact section -->
-		<div class="contact" id="news">
+		<div class="contact" id="contact">
 			<div class="container">
 				<div class="contact__content">
-					<div class="contact__info">
-						<div>
-							
+					<div class="row contact__info">
+						<div class="col-md-6">
+							<h5 class="text-right">CÔNG TY CỔ PHẦN KBL</h5>
+							<p class="d-flex align-items-start">
+								<img src="images/icon-ad.png" class="mr-3"/>
+								<span>Tầng 14 tòa nhà Licogi 13, số 164 khuất duy tiến,
+									Phường nhân chính, quận thanh xuân, Hà Nội</span>
+							</p>
+							<div class="d-flex justify-content-between">
+								<div>
+									<img class="mr-2" src="images/icon-tel.png" />
+									(+84) 9 0504 1514
+								</div>
+								<div>
+									<img class="mr-2" src="images/icon-web.png" />
+									www.felizhomes.vn
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<h5>VĂN PHÒNG ĐẠI DIỆN</h5>
+							<p class="d-flex align-items-start">
+								<img src="images/icon-ad.png" class="mr-3"/>
+								<span>Tầng 14 tòa nhà Licogi 13, số 164 khuất duy tiến, Phường nhân chính, quận thanh xuân, Hà Nội</span>
+							</p>
+							<div class="d-flex justify-content-between">
+								<div>
+									<img class="mr-2" src="images/icon-tel.png" />
+									(+84) 9 0504 1514
+								</div>
+								<div>
+									<img class="mr-2" src="images/icon-web.png" />
+									www.felizhomes.vn
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="contact__form">
 						<div>
 							<div class="row">
 								<div class="col">
-								  <input type="text" class="form-control" placeholder="First name">
+								  <input type="text" class="form-control" placeholder="Họ và Tên...">
 								</div>
 								<div class="col">
-								  <input type="text" class="form-control" placeholder="Last name">
+								  <input type="text" class="form-control" placeholder="Email...">
 								</div>
 							  </div>
 							  <div class="row">
 								<div class="col">
-								  <input type="text" class="form-control" placeholder="First name">
+								  <input type="text" class="form-control" placeholder="Số điện thoại...">
 								</div>
 								<div class="col">
-								  <input type="text" class="form-control" placeholder="Last name">
+								  <input type="text" class="form-control" placeholder="Địa chỉ...">
 								</div>
 							  </div>
 						</div>
-						<div>
+						<div class="text-center">
 							<button type="button" class="btn btn-light">Gửi Liên Hệ</button>
 						</div>
 					</div>
@@ -319,8 +547,8 @@
 	<!-- add Javasscript file from js file -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src='js/wow.min.js'></script>
+	<script type="text/javascript" src='js/owl.carousel.min.js'></script>
 	<script type="text/javascript" src='js/main.js'></script>
 
 </body>
