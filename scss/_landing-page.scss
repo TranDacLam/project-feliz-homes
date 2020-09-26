@@ -1,5 +1,4 @@
 .landing-page{
-
     .about,
     .location-other,
     .location,
@@ -131,6 +130,7 @@
         text-transform: uppercase;
     }
     .nav-link{
+        @extend .ff-semibold;
         font-weight: 400;
         position: relative;
         color: $white-color !important;
@@ -163,17 +163,22 @@
         min-height: 100vh;
         display: flex;
         align-items: center;
-        padding-top: 8%;
+        padding-top: 200px;
         padding-bottom: 30px;
 
         h4{
             text-align: center;
-            font-weight: 600;
+            font-weight: 400;
             text-transform: uppercase;
             letter-spacing: 0.25px;
             line-height: 1.5;
             margin-bottom: 40px;
             font-size: 23px;
+        }
+        .row{
+            >div{
+                padding: 50px 10% 15%;
+            }
         }
     }
     .overlay{
@@ -197,12 +202,15 @@
             &-title{
                 margin-bottom: 50px;
                 h4{
+                    font-family: 'Lato-Black';
                     font-size: 25px;
-                    font-weight: 800;
+                    font-weight: 400;
                     margin-bottom: 36px;
                 }
                 p{
                     line-height: 20px;
+                    font-weight: 400;
+                    font-size: 18px;
                 }
             }
             &-body{
@@ -218,10 +226,12 @@
                     }
                     p{
                         margin-bottom: 0;
-                        font-weight: 500;
+                        font-size: 18px;
+                        font-weight: 400;
                     }
                     strong{
-                        font-weight: 800;
+                        font-size: 18px;
+                        font-weight: 700;
                     }
                     img{
                         margin-right: 24px;
@@ -283,8 +293,9 @@
                 }
                 strong{
                     text-transform: uppercase;
-                    font-size: 16px;
+                    font-size: 15px;
                     margin-top: 8px;
+                    @extend .ff-semibold;
                 }
             }
         }
@@ -304,9 +315,10 @@
             padding-bottom: 32px;
             margin-bottom: 32px;
             text-transform: uppercase;
-            font-weight: 800;
             font-size: 25px;
-            line-height: 34px;
+            font-weight: 400;
+            line-height: 35.63px;
+            @extend .ff-black;
             &:after{
                 content: "";
                 position: absolute;
@@ -320,7 +332,13 @@
             }
         }
         P{
-            font-size: 18px;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        &__title{
+            padding-top: 30px;
+            padding-bottom:30px;
         }
 
         &__content{
@@ -350,15 +368,18 @@
         color: $white-color;
         
         &__content{
+            padding-top: 30px;
+            padding-bottom:30px;
             h4{
                 position: relative;
                 padding-bottom: 48px;
                 margin-bottom: 48px;
                 text-transform: uppercase;
-                font-weight: 600;
                 font-size: 25px;
-                line-height: 34px;
+                font-weight: 400;
+                line-height: 32.34px;
                 color: $primary-color;
+                @extend .ff-semibold;
                 &:after{
                     content: "";
                     position: absolute;
@@ -373,7 +394,9 @@
             }
             p{
                 font-size: 20px;
-                line-height: 27px;
+                font-weight: 400;
+                line-height: 28.3px;
+                color: #fcf8f8;
             }
         }
         &__slides{
@@ -792,18 +815,21 @@
                 margin-bottom: 25px;
             }
             h6{
-                font-size: 20px;
-                font-weight: 700;
+                font-size: 21px;
+                font-weight: 400;
                 padding: 0 20px;
                 margin-bottom: 20px;
                 text-transform: uppercase;
                 text-align: center;
                 line-height: 27px;
+                @extend .ff-black;
             }
             p{
                 padding: 0 20px;
                 text-align: justify;
-                line-height: 21px;
+                font-size: 17px;
+                font-weight: 700;
+                line-height: 24.74px;
                 margin-bottom: 25px;
             }
         }
@@ -834,14 +860,14 @@
             .owl-prev{
                 position: absolute;
                 left: -100px;
-                top: 0;
+                top: -20%;
                 bottom: 0;
                 margin: auto;
             }
             .owl-next{
                 position: absolute;
                 right: -100px;
-                top: 0;
+                top: -20%;
                 bottom: 0;
                 margin: auto;
             }
@@ -912,8 +938,13 @@
         &__info{
             margin-bottom: 70px;
             h5{
+                font-size: 25px;
                 font-weight: 700;
                 margin-bottom: 32px;
+            }
+            p{
+                font-size: 18px;
+                font-weight: 400;
             }
             > div{
                 &:first-child{

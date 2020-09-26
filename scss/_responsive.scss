@@ -138,6 +138,9 @@
             }
             &.sticky-top{
                 padding-top: 5px;
+                .navbar-brand img{
+                    max-width: 150px;
+                }
                 .navbar-toggler{
                     margin-top: 20px;
                 }
@@ -273,10 +276,20 @@
     .landing-page{
         .navbar{
             .navbar-brand img{
-                max-width: 120px;
+                max-width: 150px;
             }
             &.sticky-top .navbar-brand img{
                 max-width: 120px;
+            }
+            &__contact{
+                &-hotline{
+                    display: none;
+                }
+                ul{
+                    li:nth-child(3){
+                        margin-right: 0;
+                    }
+                }
             }
         }
         
@@ -343,7 +356,7 @@
 @media screen and (orientation: landscape) and (max-width: 768px) {
     .landing-page{
         .navbar-brand img{
-            max-width: 120px !important;
+            max-width: 150px !important;
         }
     }
 }
