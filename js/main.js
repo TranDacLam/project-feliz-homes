@@ -1,22 +1,32 @@
-window.onbeforeunload = function () {
-    window.scrollTo(0,0);
-};
-
 $(function(){
 	
-	//fullpage js
-	new fullpage('#fullpage', {
-		anchors: [
-			'header', 'about', 'location-other', 
-			'location', 'utilities', 'ground',
-			'apartment', 'furniture', 'news', 'contact'
-		],
-		scrollBar: true,
-		css3: true,
-		// menu: '#navbar-menu',
-		// offsetSections: true,
-		// navigation: true,
-	});
+	function addFullPage(){
+		console.log($(window).width())
+		if($(window).width() > 992){
+			//fullpage js
+			new fullpage('#fullpage', {
+				anchors: [
+					'header', 'about', 'location-other', 
+					'location', 'utilities', 'ground',
+					'apartment', 'furniture', 'news', 'contact'
+				],
+				scrollBar: true,
+				css3: true,
+				paddingTop: '90px',
+				responsiveWidth: 992,
+				// menu: '#navbar-menu',
+				// offsetSections: true,
+				// navigation: true,
+			});
+
+			window.onbeforeunload = function () {
+				window.scrollTo(0,0);
+			};
+		}
+	}
+
+	addFullPage()
+	
 
 	// wow js
 	// new WOW().init();
@@ -58,7 +68,7 @@ $(function(){
 		stagePadding: 200,
 		nav: true,
 		navText: navText,
-		autoplay:true,
+		// autoplay:true,
 		autoplayTimeout:5000,
 		autoplayHoverPause:true,
 		responsive:{
@@ -123,6 +133,12 @@ $(function(){
 			// breakpoint from 992 up
 			992 : {
 				stagePadding: 250,
+			},
+			1400 : {
+				stagePadding: 350,
+			},
+			1660 : {
+				stagePadding: 450,
 			}
 		}
 	});
@@ -192,18 +208,22 @@ $(function(){
 	})
 
 	// Scrollspy
-	$('body').scrollspy({ target: '#navbar-menu', offset: 92 })
+	$('body').scrollspy({ target: '#navbar-menu', offset: 90 })
 
 	$("#navbar-menu a").on('click', function(event) {
 		var _this = $(this);
-		$('html, body').stop().animate({ scrollTop: $(_this.attr('href')).offset().top - 92  }, 1500);
+		$('html, body').stop().animate({ scrollTop: $(_this.attr('href')).offset().top }, 1500);
 		if(!$(this).hasClass('collapsed') && $(window).width() <= 992){
 			$('.navbar-toggler').trigger('click');
 		}
 		event.preventDefault();
 	});
 
-	$(window).on('resize', function(){
-		console.log(111)
-	})
+	// function checkScreen(){
+		
+	// }
+
+	// $(window).on('resize', function(){
+	// 	console.log(111)
+	// })
 })
