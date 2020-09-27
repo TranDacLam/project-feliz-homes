@@ -1,6 +1,26 @@
-$(function(){
+window.onbeforeunload = function () {
+    window.scrollTo(0,0);
+};
 
-	new WOW().init();
+$(function(){
+	
+	//fullpage js
+	new fullpage('#fullpage', {
+		anchors: [
+			'header', 'about', 'location-other', 
+			'location', 'utilities', 'ground',
+			'apartment', 'furniture', 'news', 'contact'
+		],
+		scrollBar: true,
+		css3: true,
+		// menu: '#navbar-menu',
+		// offsetSections: true,
+		// navigation: true,
+	});
+
+	// wow js
+	// new WOW().init();
+
 	/* Start slide */
 	let navText = [
 		`<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

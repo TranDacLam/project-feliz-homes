@@ -8,7 +8,7 @@
     .furniture,
     .news,
     .contact{
-        padding: 50px 0;
+        // padding: 30px 0;
     }
     /*Nav style*/
     .navbar{
@@ -158,13 +158,15 @@
         position: relative;
         background-color: $background-color;
         background-image: url('../images/bg-1.jpg');
-        background-position: center bottom;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        padding-top: 200px;
-        padding-bottom: 30px;
-
+        background-size: cover;
+        background-position: center bottom; 
+        // min-height: 100vh;
+        // padding-top: 200px;
+        // padding-bottom: 30px;
+        // background-size: 100% 100%;
+        .fp-tableCell{
+            vertical-align: unset;
+        }
         h4{
             text-align: center;
             font-weight: 400;
@@ -172,30 +174,29 @@
             letter-spacing: 0.25px;
             line-height: 1.5;
             margin-bottom: 40px;
-            font-size: 23px;
+            font-size: 22px;
         }
         .row{
             >div{
-                padding: 50px 10% 15%;
+                padding-top: 250px;
+                padding-bottom: 10%;
+                text-align: center;
+                img{
+                    width: 50%;
+                }
             }
         }
-    }
-    .overlay{
-        position: absolute;
-        min-height: 100%;
-        min-width: 100%;
-        left: 0;
-        top: 0;
-        background: rgba(244, 244, 244, 0.79);
     }
     .about{
         position: relative;
         background-image: url('../images/bg-2.jpg');
         background-size: cover;
         background-position: center;
-        display: flex;
-        align-items: center;
         color: $text-color;
+        .container{
+            padding-top: $pad-top-nav;
+            // padding-bottom: 30px;
+        }
         &__content{
             padding-left: 6%;
             &-title{
@@ -257,8 +258,11 @@
         background-image: url('../images/bg-3.jpg');
         background-size: cover;
         background-position: center;
-        display: flex;
-        align-items: center;
+ 
+        .container{
+            padding-top: $pad-top-nav;
+            // padding-bottom: 30px;
+        }
         &__header{
             margin-bottom: 100px;
             h4{

@@ -78,6 +78,13 @@
             &__content{
                 padding-top: 0;
             }
+            &.sticky-top{
+                max-height: $height-nav;
+                padding-top: 0;
+                .navbar-brand img{
+                    max-width: 150px;
+                }
+            }
         }
     }
 }
@@ -138,9 +145,6 @@
             }
             &.sticky-top{
                 padding-top: 5px;
-                .navbar-brand img{
-                    max-width: 150px;
-                }
                 .navbar-toggler{
                     margin-top: 20px;
                 }
@@ -322,7 +326,7 @@
             height: unset;
         }
         .header{
-            padding-top: 15%;
+            // padding-top: 15%;
         }
     }
 }
