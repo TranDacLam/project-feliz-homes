@@ -180,7 +180,6 @@ img {
       padding-top: 20px; }
     .landing-page .navbar__contact {
       position: relative;
-      overflow: hidden;
       flex-basis: 100%;
       width: 100%;
       max-height: 100%;
@@ -190,7 +189,7 @@ img {
         position: absolute;
         left: 0;
         right: 0;
-        bottom: 10px;
+        bottom: 0;
         height: 1px;
         background-color: #FFFFFF;
         opacity: .4; }
@@ -229,7 +228,8 @@ img {
         transition: max-width .3s ease-in-out; }
       .landing-page .navbar.sticky-top .navbar__contact {
         max-height: 0;
-        transition: max-height .3s ease-in-out; }
+        transition: max-height .3s ease-in-out;
+        overflow: hidden; }
       .landing-page .navbar.sticky-top .collapse {
         padding-left: 7%;
         transition: padding-left 0s ease-in-out .3s; }
@@ -285,15 +285,17 @@ img {
     background-size: cover;
     background-position: center;
     color: #104240; }
+    .landing-page .about__img img {
+      width: 85%; }
     .landing-page .about__content {
       padding-left: 6%; }
       .landing-page .about__content-title {
-        margin-bottom: 50px; }
+        margin-bottom: 40px; }
         .landing-page .about__content-title h4 {
           font-family: 'Lato-Black';
           font-size: 25px;
           font-weight: 400;
-          margin-bottom: 36px; }
+          margin-bottom: 30px; }
         .landing-page .about__content-title p {
           line-height: 20px;
           font-weight: 400;
@@ -336,7 +338,7 @@ img {
     background-size: cover;
     background-position: center; }
     .landing-page .location-other__header {
-      margin-bottom: 100px; }
+      margin-bottom: 50px; }
       .landing-page .location-other__header h4 {
         font-size: 25px;
         font-weight: 700;
