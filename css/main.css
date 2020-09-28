@@ -927,6 +927,74 @@ img {
       font-weight: 700;
       width: 300px;
       position: relative; }
+  .landing-page .call-now-button {
+    z-index: 9999;
+    clear: both;
+    margin: 0 auto;
+    position: fixed;
+    border-radius: 50px;
+    background: #f18653;
+    bottom: 5%;
+    left: 3%; }
+    .landing-page .call-now-button div {
+      display: flex; }
+    .landing-page .call-now-button .call-text {
+      color: #fff;
+      display: table;
+      padding: 10px;
+      border-radius: 21px;
+      height: 34px;
+      line-height: 14px;
+      font-size: 14px;
+      margin: 8px 5px 8px 50px;
+      text-transform: uppercase;
+      font-weight: normal;
+      text-align: center;
+      text-decoration: none !important; }
+    .landing-page .call-now-button a {
+      color: #334862;
+      text-decoration: none; }
+    .landing-page .call-now-button .quick-alo-ph-circle.active {
+      width: 130px;
+      height: 130px;
+      top: -40px;
+      left: -40px;
+      position: absolute;
+      background-color: transparent;
+      border-radius: 100%;
+      border: 2px solid rgba(30, 30, 30, 0.4);
+      opacity: 1;
+      animation: quick-alo-circle-anim 1.2s infinite ease-in-out;
+      transition: all .5s;
+      transform-origin: 50% 50%; }
+    .landing-page .call-now-button .quick-alo-ph-circle-fill.active {
+      width: 80px;
+      height: 80px;
+      top: -15px;
+      left: -15px;
+      position: absolute;
+      background-color: #000;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      border: 2px solid transparent;
+      opacity: 1;
+      animation: quick-alo-circle-fill-anim 2.3s infinite ease-in-out;
+      transition: all .5s;
+      transform-origin: 50% 50%; }
+    .landing-page .call-now-button .quick-alo-phone-img-circle.shake {
+      width: 50px;
+      height: 50px;
+      top: 0;
+      left: 0;
+      position: absolute;
+      border-radius: 100%;
+      border: 2px solid transparent;
+      opacity: 1;
+      background: url(../images/button-phone.png) no-repeat center center;
+      animation: quick-alo-circle-img-anim 1s infinite ease-in-out;
+      transform-origin: 50% 50%;
+      background-color: #0c3; }
   .landing-page .scroll-to-top {
     position: fixed;
     z-index: 999;
@@ -946,6 +1014,44 @@ img {
       border-radius: 100%; }
     .landing-page .scroll-to-top.is-visible {
       display: block; }
+
+@keyframes quick-alo-circle-img-anim {
+  10% {
+    transform: rotate(0) scale(1) skew(1deg); }
+  10% {
+    transform: rotate(-25deg) scale(1) skew(1deg); }
+  20% {
+    transform: rotate(25deg) scale(1) skew(1deg); }
+  30% {
+    transform: rotate(-25deg) scale(1) skew(1deg); }
+  40% {
+    transform: rotate(25deg) scale(1) skew(1deg); }
+  50% {
+    transform: rotate(0) scale(1) skew(1deg); }
+  100% {
+    transform: rotate(0) scale(1) skew(1deg); } }
+
+@keyframes quick-alo-circle-anim {
+  0% {
+    transform: rotate(0) scale(0.5) skew(1deg);
+    opacity: .1; }
+  30% {
+    transform: rotate(0) scale(0.7) skew(1deg);
+    opacity: .5; }
+  100% {
+    transform: rotate(0) scale(1) skew(1deg);
+    opacity: .6; } }
+
+@keyframes quick-alo-circle-fill-anim {
+  0% {
+    transform: rotate(0) scale(0.7) skew(1deg);
+    opacity: .2; }
+  50% {
+    transform: rotate(0) scale(1) skew(1deg);
+    opacity: .2; }
+  100% {
+    transform: rotate(0) scale(0.7) skew(1deg);
+    opacity: .2; } }
 
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -1153,7 +1259,10 @@ img {
   .landing-page .furniture .owl-nav .owl-next {
     right: 20px; }
   .landing-page .furniture .owl-stage-outer:after {
-    content: none; } }
+    content: none; }
+  .landing-page .call-now-button {
+    bottom: 5%;
+    left: 5%; } }
 
 @media only screen and (max-width: 768px) {
   .landing-page .about__content {
