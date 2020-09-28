@@ -512,6 +512,7 @@
             color: $text-color;
         }
         &__slides{
+            position: relative;
         }
         &__list{
             position: relative;
@@ -542,6 +543,24 @@
                     margin-right: 10px;
                 }
             }
+        }
+        &__opacity1{
+            position: absolute;
+            right: -15px;
+            top: 0px;
+            bottom: 15%;
+            width: 30px;
+            background: linear-gradient(to left, #f7f3ef0f 0%, #f7f3efb5 50%, #f7f0ed36 100%);
+            z-index: 100;
+        }
+        &__opacity2{
+            position: absolute;
+            left: -15px;
+            top: 0px;
+            bottom: 15%;
+            width: 30px;
+            background: linear-gradient(to right, #f7f3ef0f 0%, #f7f3efb5 50%, #f7f0ed36 100%);
+            z-index: 100;
         }
         .owl-item{
             position: relative;

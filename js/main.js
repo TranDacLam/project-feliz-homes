@@ -68,7 +68,7 @@ $(function(){
 		stagePadding: 200,
 		nav: true,
 		navText: navText,
-		// autoplay:true,
+		autoplay:true,
 		autoplayTimeout:5000,
 		autoplayHoverPause:true,
 		responsive:{
