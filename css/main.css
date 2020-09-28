@@ -987,16 +987,18 @@ img {
     width: 60px; }
   .landing-page .about__content-body li p, .landing-page .about__content-body li strong {
     font-size: 16px; }
-  .landing-page .location-other__content-one img {
-    width: 85%; }
-  .landing-page .location-other__content-one > div:nth-child(2) img {
-    width: 65%; }
+  .landing-page .location-other__content-one {
+    margin-bottom: 10px !important; }
+    .landing-page .location-other__content-one img {
+      width: 75%; }
+    .landing-page .location-other__content-one > div:nth-child(2) img {
+      width: 60%; }
   .landing-page .location-other__content-two img {
-    width: 88%; }
+    width: 83%; }
   .landing-page .location-other__header {
-    margin-bottom: 35px; }
+    margin-bottom: 25px; }
     .landing-page .location-other__header h4 {
-      font-size: 22px; }
+      font-size: 20px; }
   .landing-page .utilities__content h4 {
     padding-bottom: 24px;
     margin-bottom: 24px;
@@ -1179,7 +1181,16 @@ img {
     padding: 0 10px 0 10px;
     position: unset; }
   .landing-page .utilities .owl-carousel .owl-nav.disabled {
-    display: none !important; } }
+    display: none !important; }
+  .landing-page .apartment__item {
+    flex-wrap: wrap;
+    padding: 0; }
+    .landing-page .apartment__item-title {
+      position: unset;
+      margin-top: 10px; }
+      .landing-page .apartment__item-title h4 {
+        font-size: 20px;
+        margin-bottom: 10px; } }
 
 @media only screen and (orientation: landscape) and (max-width: 1200px) {
   .landing-page .about,

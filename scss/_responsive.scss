@@ -123,23 +123,24 @@
         .location-other{
             &__content{
                 &-one{
+                    margin-bottom: 10px !important;
                     img{
-                        width: 85%;
+                        width: 75%;
                     }
                     > div:nth-child(2) img{
-                        width: 65%;
+                        width: 60%;
                     }
                 }
                 &-two{
                     img{
-                        width: 88%;
+                        width: 83%;
                     }
                 }
             }
             &__header{
-                margin-bottom: 35px;
+                margin-bottom: 25px;
                 h4{
-                    font-size: 22px;
+                    font-size: 20px;
                 }
             }
         }
@@ -495,6 +496,20 @@
             }
             .owl-carousel .owl-nav.disabled{
                 display: none !important;
+            }
+        }
+        .apartment{
+            &__item{
+                flex-wrap: wrap;
+                padding: 0;
+                &-title{
+                    position: unset;
+                    margin-top: 10px;
+                    h4{
+                        font-size:20px;
+                        margin-bottom:10px;
+                    }
+                }
             }
         }
     }
