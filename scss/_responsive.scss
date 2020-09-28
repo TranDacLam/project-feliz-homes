@@ -83,10 +83,18 @@
                 padding-top: 0;
             }
             &.sticky-top{
-                max-height: $height-nav;
-                padding-top: 0;
+                max-height: 65px;
                 .navbar-brand img{
                     max-width: 150px;
+                    margin-bottom: -60px;
+                }
+                .nav-link{
+                    font-size: 14px;
+                }
+            }
+            &__contact{
+                ul{
+                    padding-top: 12px;
                 }
             }
         }
@@ -279,6 +287,9 @@
                 }
                 .container{
                     align-items: flex-start;
+                }
+                .nav-link{
+                    font-size: 16px;
                 }
             }
         }

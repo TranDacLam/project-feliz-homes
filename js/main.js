@@ -12,7 +12,7 @@ $(function(){
 				],
 				scrollBar: true,
 				css3: true,
-				paddingTop: '90px',
+				paddingTop: '75px',
 				responsiveWidth: 992,
 				// menu: '#navbar-menu',
 				// offsetSections: true,
@@ -68,7 +68,7 @@ $(function(){
 		stagePadding: 200,
 		nav: true,
 		navText: navText,
-		autoplay:true,
+		// autoplay:true,
 		autoplayTimeout:5000,
 		autoplayHoverPause:true,
 		responsive:{
@@ -95,7 +95,7 @@ $(function(){
 		dots: false,
 		loop:true,
 		navText: navText,
-		// autoplay:true,
+		autoplay:true,
 		autoplayTimeout:5000,
 		autoplayHoverPause:true,
 		responsive:{

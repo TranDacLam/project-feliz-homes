@@ -1,26 +1,6 @@
 .landing-page{
-    min-height: 900px;
-    .about,
-    .location-other,
-    .location,
-    .utilities,
-    .ground,
-    .apartment,
-    .furniture,
-    .news,
-    .contact{
-        // padding: 30px 0;
-        .container, .container-fluid{
-            // padding-top: $pad-top-nav;
-            // padding-bottom: 30px;
-        }
-    }
-    .section{
-        // padding-top: 90px;
-    }
     /*Nav style*/
     .navbar{
-        padding-top: 16px;
         max-height: 100%;
         background-color: transparent;
         transition: max-height .3s ease-in-out;
@@ -108,7 +88,7 @@
                     img{
                         // width: 200px;
                         // margin-top: 60px;
-                        margin-bottom: -60px;
+                        margin-bottom: -90px;
                         max-width: 200px;
                         transition: max-width .3s ease-in-out;
                     }
@@ -155,7 +135,7 @@
                 right: 0;
                 margin: auto;
                 width: 60px;
-                bottom: -10px;
+                bottom: -5px;
                 height: 5px;
             }
         }
@@ -576,8 +556,8 @@
                     left: 0;
                     right: 0;
                     bottom: 0;
-                    background: linear-gradient(to left, #ffffff00 0%, #f4eae7d1 22%, #f7e9e5  24%, #ffffff00 100%), 
-                    linear-gradient(to right, #ffffff00 0%, #f4eae7d1 22%, #f7e9e5  24%, #ffffff00 100%);
+                    background: linear-gradient(to left, #ffffff00 0%, #f4eae7d1 22%, #ffebe2c7  24%, #ffffff00 100%), 
+                    linear-gradient(to right, #ffffff00 0%, #f4eae7d1 22%, #ffebe2c7  24%, #ffffff00 100%);
                 }
                
             }

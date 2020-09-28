@@ -145,7 +145,6 @@ img {
   background-color: #e6f4dd; }
 
 .landing-page {
-  min-height: 900px;
   /*Nav style*/
   /*header style*/
   /* location-other */
@@ -157,7 +156,6 @@ img {
   /* news */
   /* ground */ }
   .landing-page .navbar {
-    padding-top: 16px;
     max-height: 100%;
     background-color: transparent;
     transition: max-height .3s ease-in-out;
@@ -220,11 +218,11 @@ img {
     .landing-page .navbar.sticky-top {
       position: fixed;
       background-color: #104240;
-      max-height: 90px;
+      max-height: 75px;
       border-bottom: 1.5px solid #f18653;
       transition: border .5s ease-in-out .3s, max-height .3s ease-in-out; }
       .landing-page .navbar.sticky-top .navbar-brand img {
-        margin-bottom: -60px;
+        margin-bottom: -90px;
         max-width: 200px;
         transition: max-width .3s ease-in-out; }
       .landing-page .navbar.sticky-top .navbar__contact {
@@ -257,7 +255,7 @@ img {
       right: 0;
       margin: auto;
       width: 60px;
-      bottom: -10px;
+      bottom: -5px;
       height: 5px; }
   .landing-page .header {
     position: relative;
@@ -416,7 +414,7 @@ img {
     .landing-page .location__content {
       position: absolute;
       right: 0;
-      top: 90px;
+      top: 75px;
       bottom: 0;
       left: 0;
       display: flex;
@@ -436,7 +434,7 @@ img {
       left: 0;
       padding-left: 0;
       padding-right: 0;
-      top: 90px;
+      top: 75px;
       right: 0;
       bottom: 0;
       display: flex;
@@ -555,7 +553,7 @@ img {
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(to left, #ffffff00 0%, #f4eae7d1 22%, #f7e9e5 24%, #ffffff00 100%), linear-gradient(to right, #ffffff00 0%, #f4eae7d1 22%, #f7e9e5 24%, #ffffff00 100%); }
+        background: linear-gradient(to left, #ffffff00 0%, #f4eae7d1 22%, #ffebe2c7 24%, #ffffff00 100%), linear-gradient(to right, #ffffff00 0%, #f4eae7d1 22%, #ffebe2c7 24%, #ffffff00 100%); }
     .landing-page .ground .owl-nav > button {
       width: 60px;
       height: 60px;
@@ -971,10 +969,14 @@ img {
   .landing-page .navbar__content {
     padding-top: 0; }
   .landing-page .navbar.sticky-top {
-    max-height: 90px;
-    padding-top: 0; }
+    max-height: 65px; }
     .landing-page .navbar.sticky-top .navbar-brand img {
-      max-width: 150px; }
+      max-width: 150px;
+      margin-bottom: -60px; }
+    .landing-page .navbar.sticky-top .nav-link {
+      font-size: 14px; }
+  .landing-page .navbar__contact ul {
+    padding-top: 12px; }
   .landing-page .section {
     padding-top: 75px !important; }
   .landing-page .header .row > div {
@@ -1070,6 +1072,8 @@ img {
       margin-top: 20px; }
     .landing-page .navbar.sticky-top .container {
       align-items: flex-start; }
+    .landing-page .navbar.sticky-top .nav-link {
+      font-size: 16px; }
   .landing-page .nav-link {
     text-align: center; }
     .landing-page .nav-link:hover, .landing-page .nav-link.active {
