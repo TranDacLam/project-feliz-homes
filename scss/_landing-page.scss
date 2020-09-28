@@ -1,4 +1,5 @@
 .landing-page{
+    min-height: 900px;
     .about,
     .location-other,
     .location,
@@ -292,6 +293,11 @@
                 > div:nth-child(3){
                     flex: 3;
                 }
+                img{
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
             }
             &-two{
                 padding: 0 12%;
@@ -300,6 +306,9 @@
                 }
                 img{
                     padding: 0 18%;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
                 }
                 strong{
                     text-transform: uppercase;
@@ -311,8 +320,16 @@
             img{
                 transition: transform .3s ease-in-out;
                 &:hover{
-                    transform: scale(1.2);
+                    & + p{
+                        margin-top: 30px !important;
+                    }
+                    & + strong{
+                        margin-top: 20px !important;
+                    }
                 }
+            }
+            p, strong{
+                transition: margin-top .3s ease-in-out;
             }
         }
         &__line{
@@ -638,7 +655,7 @@
             display: flex;
             justify-content: space-evenly;
             padding: 0 12%;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             li{
                 border: 1.5px solid $primary-color;
                 padding: 10px 20px;
@@ -664,19 +681,21 @@
             position: relative;
             display: flex;
             justify-content: center;
+            padding: 0 30px;
             &-title{
                 position: absolute;
                 top: 10px;
-                right: 20px;
+                right: 15px;
                 h4{
                     margin-bottom: 20px;
+                    font-size: 22px;
                 }
                 p{
                     margin-bottom: 5px;
                 }
             }
             img{
-                width: auto;
+                width: 75%;
             }
         }
         .owl-nav{
@@ -703,14 +722,14 @@
             }
             .owl-prev{
                 position: absolute;
-                left: 0;
+                left: 3%;
                 top: 0;
                 bottom: 0;
                 margin: auto;
             }
             .owl-next{
                 position: absolute;
-                right: 0;
+                right: 3%;
                 top: 0;
                 bottom: 0;
                 margin: auto;
@@ -737,7 +756,7 @@
             display: flex;
             justify-content: space-evenly;
             padding: 0 12%;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             li{
                 border: 1.5px solid $primary-color;
                 padding: 10px 20px;
@@ -756,6 +775,34 @@
                 }
             }
         }
+        .owl-stage-outer{
+            &:after{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(to left, #f7e9e5 0%, #f4eae7a3 6%, #ffffff00 15%),
+                linear-gradient(to right, #f7e9e5 0%, #f4eae7a3 6%, #ffffff00 15%);;
+            }
+        }
+        // .owl-item{
+        //     position: relative;
+        //     &:not(.active) {
+        //         .furniture__item:after{
+        //             content: "";
+        //             position: absolute;
+        //             top: 0;
+        //             left: 0;
+        //             right: 0;
+        //             bottom: 0;
+        //             background: linear-gradient(to left, #ffffff00 0%, #ffffff00 30%, #f4eae7a3 40%, #f7e9e5e8 45%, #ffffff00 100%), 
+        //             linear-gradient(to right, #ffffff00 0%, #ffffff00 30%, #f4eae742 40%, #f7e9e59e 45%, #ffffff00 100%);
+        //         }
+               
+        //     }
+        // }
         .owl-nav{
             >button{
                 width: 60px;

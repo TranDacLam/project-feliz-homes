@@ -13,7 +13,7 @@
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1336px) {
+@media only screen and (min-width: 1366px) {
     .landing-page{
         .about,
         .location-other,
@@ -25,11 +25,15 @@
         .news,
         .contact{
             // min-height: calc(100vh - #{$height-nav} + 30px);
+            .container{
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
         }
     }
 }
 
-@media only screen and (max-width: 1336px) and (min-width: 1250px) {
+@media only screen and (max-width: 1366px) and (min-width: 1250px) {
     .landing-page {
         .news{
             .owl-nav {
@@ -69,7 +73,7 @@
     }
 }
 
-@media only screen and (max-width: 1336px) {
+@media only screen and (max-width: 1440px) {
     .landing-page{
         .navbar-brand img{
             max-width: 200px;
@@ -86,6 +90,9 @@
                 }
             }
         }
+        .section{
+            padding-top: 75px !important;
+        }
         .header{
             .row{
                 >div{
@@ -93,7 +100,99 @@
                 }
             }
         }
+        .about{
+            &__content{
+                &-title {
+                    margin-bottom: 30px;
+                    h4{
+                        margin-bottom: 20px;
+                    }
+                }
+                &-body{
+                    li{
+                        img{
+                            width: 60px;
+                        }
+                        p, strong{
+                            font-size:16px;
+                        }
+                    }
+                }
+            }
+        }
+        .location-other{
+            &__content{
+                &-one{
+                    img{
+                        width: 85%;
+                    }
+                    > div:nth-child(2) img{
+                        width: 65%;
+                    }
+                }
+                &-two{
+                    img{
+                        width: 88%;
+                    }
+                }
+            }
+            &__header{
+                margin-bottom: 35px;
+                h4{
+                    font-size: 22px;
+                }
+            }
+        }
+        .utilities{
+            &__content {
+                h4{
+                    padding-bottom: 24px;
+                    margin-bottom: 24px;
+                    font-size: 22px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+        .ground {
+            h4{
+                font-size: 22px;
+            }
+            &__item{
+                &-color{
+                    font-size:12px;
+                    margin-bottom: 10px;
+                }
+                &-title{
+                    margin-top:10px;
+                }
+            }
+            .owl-dots{
+                margin-top: 4px;
+            }
+
+        }
+        .apartment{
+            &__nav{
+                margin-bottom: 20px;
+            }
+            &__item{
+                img{
+                    width: 65%;
+                }
+            }
+        }
+        .news {
+            .owl-dots{
+                margin-top: 30px;
+            }
+        }
     }
+}
+
+@media only screen and (max-width: 1366px) {
+   
 }
 
 @media only screen and (max-width: 1200px) {
@@ -193,9 +292,9 @@
                 }
             }
         }
-        .section{
-            padding-top:40px;
-            padding-bottom: 40px;
+        .section:not(.header){
+            padding-top:40px !important;
+            padding-bottom: 40px !important;
         }
         .header{
             min-height: 100vh;
@@ -235,11 +334,20 @@
         .location-other{
             &__content{
                 &-one{
+                    img{
+                        width: 100%;
+                    }
                     > div:nth-child(2){
                         flex: 1;
                         img{
                             width: 45%;
                         }
+                    }
+                }
+                &-two{
+                    padding: 0 5%;
+                    strong{
+                        font-size: 13px;
                     }
                 }
             }
@@ -253,6 +361,11 @@
                     &:nth-child(odd){
                         margin-right: 15px;
                     }
+                }
+            }
+            &__item{
+                img{
+                    width: 100%;
                 }
             }
         }
@@ -274,6 +387,11 @@
                 }
                 .owl-next{
                     right: 20px;
+                }
+            }
+            .owl-stage-outer{
+                &:after{
+                    content: none;
                 }
             }
         }

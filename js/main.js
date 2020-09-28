@@ -1,7 +1,7 @@
 $(function(){
 	
 	function addFullPage(){
-		console.log($(window).width())
+		// console.log($(window).width())
 		if($(window).width() > 992){
 			//fullpage js
 			new fullpage('#fullpage', {
@@ -22,14 +22,14 @@ $(function(){
 			window.onbeforeunload = function () {
 				window.scrollTo(0,0);
 			};
+
+			// wow js
+			new WOW().init();
 		}
 	}
 
 	addFullPage()
 	
-
-	// wow js
-	// new WOW().init();
 
 	/* Start slide */
 	let navText = [
@@ -68,7 +68,7 @@ $(function(){
 		stagePadding: 200,
 		nav: true,
 		navText: navText,
-		// autoplay:true,
+		autoplay:true,
 		autoplayTimeout:5000,
 		autoplayHoverPause:true,
 		responsive:{
@@ -138,7 +138,7 @@ $(function(){
 				stagePadding: 350,
 			},
 			1660 : {
-				stagePadding: 450,
+				stagePadding: 350,
 			}
 		}
 	});

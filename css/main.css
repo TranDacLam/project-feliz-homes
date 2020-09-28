@@ -145,6 +145,7 @@ img {
   background-color: #e6f4dd; }
 
 .landing-page {
+  min-height: 900px;
   /*Nav style*/
   /*header style*/
   /* location-other */
@@ -351,20 +352,28 @@ img {
         width: 77%; }
     .landing-page .location-other__content-one > div:nth-child(3) {
       flex: 3; }
+    .landing-page .location-other__content-one img:hover {
+      transform: scale(1.1); }
     .landing-page .location-other__content-two {
       padding: 0 12%; }
       .landing-page .location-other__content-two div {
         flex: 1; }
       .landing-page .location-other__content-two img {
         padding: 0 18%; }
+        .landing-page .location-other__content-two img:hover {
+          transform: scale(1.2); }
       .landing-page .location-other__content-two strong {
         text-transform: uppercase;
         font-size: 15px;
         margin-top: 8px; }
     .landing-page .location-other__content img {
       transition: transform .3s ease-in-out; }
-      .landing-page .location-other__content img:hover {
-        transform: scale(1.2); }
+      .landing-page .location-other__content img:hover + p {
+        margin-top: 30px !important; }
+      .landing-page .location-other__content img:hover + strong {
+        margin-top: 20px !important; }
+    .landing-page .location-other__content p, .landing-page .location-other__content strong {
+      transition: margin-top .3s ease-in-out; }
     .landing-page .location-other__line {
       flex: 1; }
       .landing-page .location-other__line span {
@@ -606,7 +615,7 @@ img {
       display: flex;
       justify-content: space-evenly;
       padding: 0 12%;
-      margin-bottom: 50px; }
+      margin-bottom: 40px; }
       .landing-page .apartment__nav li {
         border: 1.5px solid #f18653;
         padding: 10px 20px;
@@ -625,17 +634,19 @@ img {
     .landing-page .apartment__item {
       position: relative;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      padding: 0 30px; }
       .landing-page .apartment__item-title {
         position: absolute;
         top: 10px;
-        right: 20px; }
+        right: 15px; }
         .landing-page .apartment__item-title h4 {
-          margin-bottom: 20px; }
+          margin-bottom: 20px;
+          font-size: 22px; }
         .landing-page .apartment__item-title p {
           margin-bottom: 5px; }
       .landing-page .apartment__item img {
-        width: auto; }
+        width: 75%; }
     .landing-page .apartment .owl-nav > button {
       width: 60px;
       height: 60px;
@@ -656,13 +667,13 @@ img {
         font-size: 42px; }
     .landing-page .apartment .owl-nav .owl-prev {
       position: absolute;
-      left: 0;
+      left: 3%;
       top: 0;
       bottom: 0;
       margin: auto; }
     .landing-page .apartment .owl-nav .owl-next {
       position: absolute;
-      right: 0;
+      right: 3%;
       top: 0;
       bottom: 0;
       margin: auto; }
@@ -679,7 +690,7 @@ img {
       display: flex;
       justify-content: space-evenly;
       padding: 0 12%;
-      margin-bottom: 50px; }
+      margin-bottom: 40px; }
       .landing-page .furniture__nav li {
         border: 1.5px solid #f18653;
         padding: 10px 20px;
@@ -695,6 +706,14 @@ img {
         .landing-page .furniture__nav li:hover, .landing-page .furniture__nav li .active {
           color: #FFFFFF;
           background-color: #104240; }
+    .landing-page .furniture .owl-stage-outer:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to left, #f7e9e5 0%, #f4eae7a3 6%, #ffffff00 15%), linear-gradient(to right, #f7e9e5 0%, #f4eae7a3 6%, #ffffff00 15%); }
     .landing-page .furniture .owl-nav > button {
       width: 60px;
       height: 60px;
@@ -917,7 +936,20 @@ img {
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1336px) and (min-width: 1250px) {
+@media only screen and (min-width: 1366px) {
+  .landing-page .about .container,
+  .landing-page .location-other .container,
+  .landing-page .location .container,
+  .landing-page .utilities .container,
+  .landing-page .ground .container,
+  .landing-page .apartment .container,
+  .landing-page .furniture .container,
+  .landing-page .news .container,
+  .landing-page .contact .container {
+    padding-top: 15px;
+    padding-bottom: 15px; } }
+
+@media only screen and (max-width: 1366px) and (min-width: 1250px) {
   .landing-page .news .owl-nav .owl-prev {
     left: -60px; }
   .landing-page .news .owl-nav .owl-next {
@@ -933,7 +965,7 @@ img {
   .landing-page .nav-link {
     font-size: 13px; } }
 
-@media only screen and (max-width: 1336px) {
+@media only screen and (max-width: 1440px) {
   .landing-page .navbar-brand img {
     max-width: 200px; }
   .landing-page .navbar__content {
@@ -943,8 +975,49 @@ img {
     padding-top: 0; }
     .landing-page .navbar.sticky-top .navbar-brand img {
       max-width: 150px; }
+  .landing-page .section {
+    padding-top: 75px !important; }
   .landing-page .header .row > div {
-    padding-top: 110px; } }
+    padding-top: 110px; }
+  .landing-page .about__content-title {
+    margin-bottom: 30px; }
+    .landing-page .about__content-title h4 {
+      margin-bottom: 20px; }
+  .landing-page .about__content-body li img {
+    width: 60px; }
+  .landing-page .about__content-body li p, .landing-page .about__content-body li strong {
+    font-size: 16px; }
+  .landing-page .location-other__content-one img {
+    width: 85%; }
+  .landing-page .location-other__content-one > div:nth-child(2) img {
+    width: 65%; }
+  .landing-page .location-other__content-two img {
+    width: 88%; }
+  .landing-page .location-other__header {
+    margin-bottom: 35px; }
+    .landing-page .location-other__header h4 {
+      font-size: 22px; }
+  .landing-page .utilities__content h4 {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    font-size: 22px; }
+  .landing-page .utilities__content p {
+    font-size: 18px; }
+  .landing-page .ground h4 {
+    font-size: 22px; }
+  .landing-page .ground__item-color {
+    font-size: 12px;
+    margin-bottom: 10px; }
+  .landing-page .ground__item-title {
+    margin-top: 10px; }
+  .landing-page .ground .owl-dots {
+    margin-top: 4px; }
+  .landing-page .apartment__nav {
+    margin-bottom: 20px; }
+  .landing-page .apartment__item img {
+    width: 65%; }
+  .landing-page .news .owl-dots {
+    margin-top: 30px; } }
 
 @media only screen and (max-width: 1200px) {
   .landing-page .header .row > div img {
@@ -1001,9 +1074,9 @@ img {
       color: #f18653 !important; }
       .landing-page .nav-link:hover:after, .landing-page .nav-link.active:after {
         content: none; }
-  .landing-page .section {
-    padding-top: 40px;
-    padding-bottom: 40px; }
+  .landing-page .section:not(.header) {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important; }
   .landing-page .header {
     min-height: 100vh; }
     .landing-page .header .row > div img {
@@ -1024,10 +1097,16 @@ img {
     margin-left: -15px; }
   .landing-page .ground__item-color {
     align-items: center; }
+  .landing-page .location-other__content-one img {
+    width: 100%; }
   .landing-page .location-other__content-one > div:nth-child(2) {
     flex: 1; }
     .landing-page .location-other__content-one > div:nth-child(2) img {
       width: 45%; }
+  .landing-page .location-other__content-two {
+    padding: 0 5%; }
+    .landing-page .location-other__content-two strong {
+      font-size: 13px; }
   .landing-page .apartment__nav {
     flex-wrap: wrap; }
     .landing-page .apartment__nav li {
@@ -1035,6 +1114,8 @@ img {
       margin-bottom: 15px; }
       .landing-page .apartment__nav li:nth-child(odd) {
         margin-right: 15px; }
+  .landing-page .apartment__item img {
+    width: 100%; }
   .landing-page .furniture__nav {
     flex-wrap: wrap;
     margin-bottom: 20px; }
@@ -1046,7 +1127,9 @@ img {
   .landing-page .furniture .owl-nav .owl-prev {
     left: 20px; }
   .landing-page .furniture .owl-nav .owl-next {
-    right: 20px; } }
+    right: 20px; }
+  .landing-page .furniture .owl-stage-outer:after {
+    content: none; } }
 
 @media only screen and (max-width: 768px) {
   .landing-page .about__content {
