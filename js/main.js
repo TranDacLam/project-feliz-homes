@@ -109,6 +109,13 @@ $(function(){
 		}
 	});
 
+	$('.apartment a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        e.target // newly activated tab
+        e.relatedTarget // previous active tab
+		$(".apartment__list").trigger('refresh.owl.carousel');
+	});
+
+
 	$('.furniture__list').owlCarousel({
 		items:1,
 		loop:true,
@@ -141,6 +148,12 @@ $(function(){
 				stagePadding: 350,
 			}
 		}
+	});
+
+	$('.furniture a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        e.target // newly activated tab
+        e.relatedTarget // previous active tab
+		$(".furniture__list").trigger('refresh.owl.carousel');
 	});
 
 	$('.news__list').owlCarousel({

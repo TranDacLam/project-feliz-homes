@@ -111,32 +111,32 @@
                 padding-top: 0;
             }
         }
-    }
-    .nav-link , .navbar-brand{
-        color: #f4f4f4;
-        cursor: pointer;
-        text-transform: uppercase;
-    }
-    .nav-link{
-        @extend .ff-semibold;
-        font-weight: 400;
-        position: relative;
-        color: $white-color !important;
-        &:after{
-            content: "";
+        .nav-link , .navbar-brand{
+            color: #f4f4f4;
+            cursor: pointer;
+            text-transform: uppercase;
         }
-        &:hover, &.active {
+        .nav-link{
+            @extend .ff-semibold;
+            font-weight: 400;
+            position: relative;
+            color: $white-color !important;
             &:after{
-                background-image: url(../images/menu-active.svg);
-                background-size: cover;
-                background-position: center;
-                position: absolute;
-                left: 0;
-                right: 0;
-                margin: auto;
-                width: 60px;
-                bottom: -5px;
-                height: 5px;
+                content: "";
+            }
+            &:hover, &.active {
+                &:after{
+                    background-image: url(../images/menu-active.svg);
+                    background-size: cover;
+                    background-position: center;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    width: 60px;
+                    bottom: -5px;
+                    height: 5px;
+                }
             }
         }
     }
@@ -656,25 +656,29 @@
             padding: 0 12%;
             margin-bottom: 40px;
             li{
-                border: 1.5px solid $primary-color;
-                padding: 10px 20px;
-                color: $primary-color;
-                font-style: 18px;
-                font-weight: 700;
-                border-radius: 8px;
-                text-transform: uppercase;
-                cursor: pointer;
-                transition: background-color .3s ease-in-out, color .3s ease-in-out;
-                text-align: center;
-                white-space: nowrap;
-                &:hover, .active{
-                    color: $white-color;
-                    background-color: $primary-color;
+                a{
+                    border: 1.5px solid $primary-color;
+                    font-style: 18px;
+                    font-weight: 700;
+                    border-radius: 8px;
+                    color: $primary-color;
+                    padding: 10px 20px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    text-align: center;
+                    white-space: nowrap;
+                    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+                    &:hover, &.active{
+                        background-color: $primary-color;
+                        color: $white-color;
+                    }
                 }
             }
         }
         &__slides{
-            
+            .owl-hidden{
+                opacity: 1 !important;
+            }
         }
         &__item{
             position: relative;
@@ -757,20 +761,22 @@
             padding: 0 12%;
             margin-bottom: 40px;
             li{
-                border: 1.5px solid $primary-color;
-                padding: 10px 20px;
-                color: $text-color;
-                font-style: 18px;
-                font-weight: 700;
-                border-radius: 8px;
-                text-transform: uppercase;
-                cursor: pointer;
-                transition: background-color .3s ease-in-out, color .3s ease-in-out;
-                text-align: center;
-                white-space: nowrap;
-                &:hover, .active{
-                    color: $white-color;
-                    background-color: $text-color;
+                a{
+                    border: 1.5px solid $primary-color;
+                    font-style: 18px;
+                    font-weight: 700;
+                    border-radius: 8px;
+                    color: $primary-color;
+                    padding: 10px 20px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    text-align: center;
+                    white-space: nowrap;
+                    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+                    &:hover, &.active{
+                        color: $white-color;
+                        background-color: $text-color;
+                    }
                 }
             }
         }
